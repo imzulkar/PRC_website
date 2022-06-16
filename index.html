@@ -7,14 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="source/function/tailwind.config.js"></script>
+  <script src="https://kit.fontawesome.com/e8641abf26.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="source/css/navigation.css">
   <title>PRC</title>
 </head>
 
 <body class="bg-cyan-100">
-  <div class="container m-auto mt-4 bg-white rounded-md">
+  <div class="container mx-auto my-4 bg-white rounded-xl shadow-2xl">
     <section id="navbar">
       <!-- =======================Navigation bar======================= -->
-      <nav class="flex items-center bg-transparent p-6">
+      <nav class="flex items-center bg-transparent p-6 w-11/12 m-auto sticky" id="navbar">
         <div class="flex items-center flex-shrink-0 text-black mr-6">
           <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
             xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +36,7 @@
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div class="text-sm lg:flex-grow lg:flex lg:justify-center font-semibold">
-            <a href="#sec-1" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-blue-700 mr-4">
+            <a href="#sec-1" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-blue-700 mr-4 active">
               Docs
             </a>
             <a href="#sec-2" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-blue-700 mr-4">
@@ -58,32 +60,79 @@
         </div>
       </nav>
     </section>
+    <!-- =======================Header content section======================= -->
     <section id="header-content">
-      <div class="h-screen-90 grid grid-rows-6">
-        <div class="row-span-3 grid grid-cols-5 h-4/5">
-          <div class="col-span-2 flex flex-col justify-center items-center w-4/5 m-auto">
+      <div class= "min-h-screen-90 grid grid-rows-4 w-5/6 m-auto">
+        <div class="row-span-4 grid grid-cols-4 h-4/5">
+          <div class="col-span-2 flex flex-col w-4/5 my-auto">
             <div class="content-title">
-              <h2 class="text-4xl font-extrabold text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus enim ducimus quos sint, distinctio
+              <h2 class="text-4xl font-extrabold text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </h2>
+              <p class="py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus enim ducimus quos sint, distinctio
                 pariatur! Odit fuga similique corporis cum tempore sint quae! Quidem repellat modi quisquam quis
                 aliquid. Corrupti.</p>
-            </div>            
+            </div>
+            <div class="mt-5">
+              <button type="button"
+                class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-semibold rounded-lg text-sm px-14 py-3.5 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Our
+                Services</button>
+            </div>
           </div>
-          <div class="col-span-3 m-auto">
+          <div class="col-span-2 my-auto flex justify-center">
             <img src="source/images/image2vector (1).svg" alt="logo" class="h-screen-70">
           </div>
         </div>
-        <div class="flex justify-start ml-16">
-          <div>
-            <button type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-semibold rounded-lg text-sm px-14 py-3.5 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Our Services</button>
+        <!-- <div class="flex justify-start col">
+          <div class="">
+            <button type="button"
+              class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-semibold rounded-lg text-sm px-14 py-3.5 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Our
+              Services</button>
+          </div>
+        </div> -->
+        <!-- ======================= services slider ======================= -->
+        <div class="row-span-1">
+          <div class="">
+             <h1 class="font-bold text-xl">Why Choose us</h1>
+          </div>
+         
+          <div class="grid grid-cols-3 gap-5 ">
+            <div class="flex justify-center p-10">
+              <div class="p-5 items-center">
+                <i class="fa-brands fa-servicestack text-3xl"></i>
+              </div>
+              <div class="col-span-3">
+                <h4 class="font-semibold">Priority Provider</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias iure, </p>
+              </div>
+            </div>
+            <div class="flex justify-center  p-10">
+              <div class="p-5 items-center">
+                <i class="fa-brands fa-servicestack text-3xl"></i>
+              </div>
+              <div class="col-span-3">
+                <h4 class="font-semibold">Affordable Price</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias iure,</p>
+              </div>
+            </div>
+            <div class="flex justify-center p-10">
+              <div class="p-5 items-center">
+                <i class="fa-brands fa-servicestack text-3xl"></i>
+              </div>
+              <div class="col-span-3">
+                <h4 class="font-semibold">Quality Service</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias iure,</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row-span-2 bg-green-400"></div>
       </div>
     </section>
 
 
   </div>
+
+
+  <script src="source/js/navigation.js"></script>
 
 </body>
 
