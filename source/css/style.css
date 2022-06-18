@@ -1,15 +1,25 @@
-
 /* ==============Navbar ============== */
 .sticky {
-    position: fixed;
+    position: fixed!important;
     top: 0;
     width: 100%;
-    background-color: #dddd!important;
-    z-index: 10;
-  }
-#navbar{
-    z-index: 10;
+    background-color: #ffffff !important;
+    box-shadow:
+        0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    /* transition: ease-in-out 2s; */
 }
+
+#navbar {
+    z-index: 10;
+    transition: ease-in-out 1s;
+}
+
+
+
+
+
 /* ##########end navbar########## */
 
 /* ==============swiper js slider ============== */
@@ -62,7 +72,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.subparagraph{
+
+.subparagraph {
     line-height: 1.5rem;
 }
 
