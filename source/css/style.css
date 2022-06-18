@@ -17,8 +17,21 @@
 }
 
 
+/* sidenav service */
+.nav-link{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);;
+    display: block;
+    padding: 0.8rem 1rem;
+}
 
-
+.nav-link:hover{
+    color: #fff;
+    font-weight: 600;
+}
+.nav-link i{
+    padding-right:10px;
+}
 
 /* ##########end navbar########## */
 
@@ -78,3 +91,13 @@
 }
 
 /* ##########end slider text content########## */
+
+/* ============== service text content ============== */
+.service-text-btn {
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding: 0 30px;
+    background: -webkit-linear-gradient(-45deg, #9ff669 0%, #31de79 100%);
+    text-transform: capitalize;
+}

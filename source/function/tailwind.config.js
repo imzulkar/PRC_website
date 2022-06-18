@@ -5,7 +5,6 @@ tailwind.config = {
         'screen-90': '90vh',
         'screen-70': '70vh',
         'screen-50': '50vh',
-        'cus-87':'87%'
       }
     }
   }
