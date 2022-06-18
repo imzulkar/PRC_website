@@ -2,246 +2,169 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="source/function/tailwind.config.js"></script>
-  <script src="https://kit.fontawesome.com/e8641abf26.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="source/css/style.css">
-  <title>PRC</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- swiper js slider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- custome css -->
+    <link rel="stylesheet" href="source/css/style.css">
+    <title>PRC</title>
 </head>
 
-<body class="bg-cyan-100">
-  <div class="container mx-auto my-4 bg-white rounded-xl shadow-2xl">
-    <section id="navbar">
-      <!-- =======================Navigation bar======================= -->
-      <nav class="flex items-center bg-transparent p-6 w-11/12 m-auto sticky" id="navbar">
-        <div class="flex items-center flex-shrink-0 text-black mr-6">
-          <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-          </svg>
-          <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
-        </div>
-        <div class="block lg:hidden">
-          <button
-            class="flex items-center px-3 py-2 border rounded text-black border-teal-400 hover:text-blue-700 hover:border-white">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div class="text-sm lg:flex-grow lg:flex lg:justify-center font-semibold">
-            <a href="#header-content"
-              class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-blue-700 mr-4 active">
-              Home
-            </a>
-            <a href="#section-services" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-blue-700 mr-4">
-              Services
-            </a>
+<body>
+    <section id="home-content">
+        <div class="min-h-screen relative">
+            <div class="absolute w-screen" id="navbar">
+                <nav class="container mx-auto" >
+                    <div class="navbar">
+                        <div class="flex-1">
+                            <a class="btn btn-ghost normal-case text-xl">PRC</a>
+                        </div>
+                        <div class="flex-none">
+                            <ul class="menu menu-horizontal p-0">
+                                <li><a>Item 1</a></li>
+                                <li tabindex="0">
+                                    <a>
+                                        Parent
+                                        <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24">
+                                            <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                                        </svg>
+                                    </a>
+                                    <ul class="p-2 bg-base-100">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Item 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
 
-            <a href="#sec-3" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-blue-700 mr-4">
-              Examples
-            </a>
-            <a href="#sec-4" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-blue-700 mr-4">
-              Examples
-            </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-blue-700">
-              Blog
-            </a>
-          </div>
-          <div>
-            <a href="#"
-              class="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
-          </div>
-        </div>
-      </nav>
-    </section>
-    <!-- =======================Header content section======================= -->
-    <section id="header-content">
-      <div class="min-h-screen-90 grid grid-rows-4 w-5/6 m-auto">
-        <div class="row-span-4 grid grid-cols-4 h-4/5">
-          <div class="col-span-2 flex flex-col w-4/5 my-auto">
-            <div class="content-title">
-              <h2 class="text-4xl font-extrabold text-left">Do everything possible through emerging technologies
-              </h2>
-              <p class="py-5">To align with our mission, we try to ensure that our clients can maximize the full
-                benefits from their easily processed data.</p>
-            </div>
-            <div class="mt-5">
-              <button type="button"
-                class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-semibold rounded-lg text-sm px-14 py-3.5 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Our
-                Services</button>
-            </div>
-          </div>
-          <div class="col-span-2 my-auto flex justify-center">
-            <img src="source/images/undraw_qa_engineers_dg-5-p.svg" alt="logo" class="h-screen-70">
-          </div>
-        </div>
-        <!-- <div class="flex justify-start col">
-          <div class="">
-            <button type="button"
-              class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-semibold rounded-lg text-sm px-14 py-3.5 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Our
-              Services</button>
-          </div>
-        </div> -->
-        <!-- ======================= services slider ======================= -->
-        <div class="row-span-1">
-          <div class="">
-            <h1 class="font-bold text-xl">Why Choose us</h1>
-          </div>
+            <div class="home-content">
 
-          <div class="grid grid-cols-4 gap-5 ">
-            <div class="flex justify-center">
-              <div class="p-5 items-center my-auto  ">
-                <i class="fa-brands fa-servicestack text-3xl"></i>
-              </div>
-              <div class="col-span-3">
-                <h4 class="font-semibold py-2">Time Saving</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias iure, </p>
-              </div>
-            </div>
-            <div class="flex justify-center ">
-              <div class="p-5 items-center my-auto">
-                <i class="fa-brands fa-servicestack text-3xl"></i>
-              </div>
-              <div class="col-span-3">
-                <h4 class="font-semibold py-2">Superior Accuracy</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias iure,</p>
-              </div>
-            </div>
-            <div class="flex justify-center">
-              <div class="p-5 items-center my-auto">
-                <i class="fa-brands fa-servicestack text-3xl"></i>
-              </div>
-              <div class="col-span-3">
-                <h4 class="font-semibold py-2">Cost Efficient</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias iure,</p>
-              </div>
-            </div>
-            <div class="flex justify-center">
-              <div class="p-5 items-center my-auto">
-                <i class="fa-brands fa-servicestack text-3xl"></i>
-              </div>
-              <div class="col-span-3">
-                <h4 class="font-semibold py-2">Required Customization </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias iure,</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                <div class="swiper mySwiper lg:min-h-screen">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="grid grid-cols-2">
+                                <div class="lg:h-screen flex justify-self-end items-center w-8/12">
+                                    <div class="text flex flex-col text-left gap-4 pr-10">
+                                        <span class="subheading">Lorem ipsum dolor sit amet consectetur</span>
+                                        <h2 class="text-5xl">Lorem ipsum dolor sit amet. <span class="font-bold">Lorem
+                                                ipsum dolor</span> sit amet.</h2>
+                                        <p class="subparagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Minima, quae?</p>
+                                        <p><button class="slider-text-btn btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Get
+                                                in touch</button>
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="lg:h-screen"><img src="source/images/slider1.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grid grid-cols-2">
+                                <div class="lg:h-screen flex justify-self-end items-center w-8/12">
+                                    <div class="text flex flex-col text-left gap-4 pr-10">
+                                        <span class="subheading">Lorem ipsum dolor sit amet consectetur</span>
+                                        <h2 class="text-5xl">Lorem ipsum dolor sit amet. <span class="font-bold">Lorem
+                                                ipsum dolor</span> sit amet.</h2>
+                                        <p class="subparagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Minima, quae?</p>
+                                        <p><button class="slider-text-btn btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Get
+                                                in touch</button>
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="lg:h-screen"><img src="source/images/slider1.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grid grid-cols-2">
+                                <div class="lg:h-screen flex justify-self-end items-center w-8/12">
+                                    <div class="text flex flex-col text-left gap-4 pr-10">
+                                        <span class="subheading">Lorem ipsum dolor sit amet consectetur</span>
+                                        <h2 class="text-5xl">Lorem ipsum dolor sit amet. <span class="font-bold">Lorem
+                                                ipsum dolor</span> sit amet.</h2>
+                                        <p class="subparagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Minima, quae?</p>
+                                        <p><button class="slider-text-btn btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Get
+                                                in touch</button>
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="lg:h-screen"><img src="source/images/slider2.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grid grid-cols-2">
+                                <div class="lg:h-screen flex justify-self-end items-center w-8/12">
+                                    <div class="text flex flex-col text-left gap-4 pr-10">
+                                        <span class="subheading">Lorem ipsum dolor sit amet consectetur</span>
+                                        <h2 class="text-5xl">Lorem ipsum dolor sit amet. <span class="font-bold">Lorem
+                                                ipsum dolor</span> sit amet.</h2>
+                                        <p class="subparagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Minima, quae?</p>
+                                        <p><button class="slider-text-btn btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Get
+                                                in touch</button>
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="lg:h-screen"><img src="source/images/slider3.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
 
 
-    <!-- =======================Services section======================= -->
-    <section id="section-services">
-      <div class="min-h-screen-90 grid grid-rows-5 w-5/6 m-auto">
-        <div class="row-span-1 flex items-center">
-          <h1 class="text-4xl font-bold">Services</h1>
-        </div>
-        <div class="row-span-3 grid grid-cols-4 ">
-          <div class="col-span-1 max-w-sm rounded overflow-hidden shadow-lg">
-            <img class="w-full" src="source/images/survay.svg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
-              </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-              <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-              <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-              <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-            </div>
-          </div>
-          <div class="col-span-1 max-w-sm rounded overflow-hidden shadow-lg">
-            <img class="w-full" src="source/images/survay.svg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
-              </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-              <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-              <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-              <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-            </div>
-          </div>
-          <div class="col-span-1 max-w-sm rounded overflow-hidden shadow-lg">
-            <img class="w-full" src="source/images/survay.svg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
-              </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-              <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-              <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-              <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-            </div>
-          </div>
 
-          <div class="col-span-1 max-w-sm rounded overflow-hidden shadow-lg">
-            <img class="w-full" src="source/images/survay.svg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
-              </p>
             </div>
-            <div class="px-6 pt-4 pb-2">
-              <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-              <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-              <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-            </div>
-          </div>
-        </div>
-        <div class="flex justify-center items-center">
-          <button type="button"
-            class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-semibold rounded-lg text-sm px-14 py-3.5 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Our
-            Services</button>
         </div>
 
 
 
-      </div>
     </section>
 
-    <!-- =======================Services section======================= -->
-    <section id="our-work">
-      <div class="min-h-screen our-work">
-         
-      </div>
-    </section>
 
-  </div>
+    <!--====================== Js section ======================-->
+    <!-- navbarjs -->
+    <script src="source/js/navigation.js"></script>
 
-  <!-- Link js files -->
-  <script src="source/js/navigation.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            autoplay: {
+                delay: 5000,
+            },
+        });
+    </script>
 </body>
 
 </html>

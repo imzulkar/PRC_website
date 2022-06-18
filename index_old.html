@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.3/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="source/function/tailwind.config.js"></script>
+
+  <script src="https://kit.fontawesome.com/e8641abf26.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="source/css/style.css">
+  <title>PRC</title>
+</head>
+
+<body class="bg-cyan-100">
+  <div class="container mx-auto my-4 bg-white rounded-xl shadow-2xl">
+    <section id="navbar">
+      <!-- =======================Navigation bar======================= -->
+      <div class="navbar w-5/6 mx-auto" >
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a href="#header-content">Home</a></li>
+              <li tabindex="0">
+                <a class="justify-between">
+                  Parent
+                  <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                  </svg>
+                </a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal p-0">
+            <li><a href="#header-content">Home</a></li>
+            <li tabindex="0">
+              <a>
+                Services
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                </svg>
+              </a>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Get started</a>
+        </div>
+      </div>
+
+    </section>
+    <!-- =======================Header content section======================= -->
+    <section id="header-content">
+      <div class="min-h-screen-90 grid grid-rows-4 w-5/6 m-auto">
+        <div class="row-span-4 grid grid-cols-4 h-4/5">
+          <div class="lg:col-span-2 md:col-span-2 sm:col-span-4 flex flex-col w-4/5 my-auto">
+            <div class="content-title">
+              <h2 class="text-4xl font-extrabold text-left">Do everything possible through emerging technologies
+              </h2>
+              <p class="py-5">To align with our mission, we try to ensure that our clients can maximize the full
+                benefits from their easily processed data.</p>
+            </div>
+            <div class="mt-5">
+              <button type="button"
+                class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-semibold rounded-lg text-sm px-14 py-3.5 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Our
+                Services</button>
+            </div>
+          </div>
+          <div class="lg:col-span-2 md:col-span-2 sm:col-span-4 my-auto flex justify-center">
+            <img src="source/images/undraw_qa_engineers_dg-5-p.svg" alt="logo" class="h-screen-70">
+          </div>
+        </div>
+        <!-- <div class="flex justify-start col">
+          <div class="">
+            <button type="button"
+              class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-semibold rounded-lg text-sm px-14 py-3.5 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Our
+              Services</button>
+          </div>
+        </div> -->
+        <!-- ======================= services slider ======================= -->
+        <div class="row-span-1">
+          <div class="">
+            <h1 class="font-bold text-xl">Why Choose us</h1>
+          </div>
+
+          <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:gap-5 md:3">
+            <div class="flex justify-center">
+              <div class="p-5 items-center my-auto  ">
+                <i class="fa-brands fa-servicestack text-3xl"></i>
+              </div>
+              <div class="col-span-3">
+                <h4 class="font-semibold py-2">Time Saving</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias iure, </p>
+              </div>
+            </div>
+            <div class="flex justify-center ">
+              <div class="p-5 items-center my-auto">
+                <i class="fa-brands fa-servicestack text-3xl"></i>
+              </div>
+              <div class="col-span-3">
+                <h4 class="font-semibold py-2">Superior Accuracy</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias iure,</p>
+              </div>
+            </div>
+            <div class="flex justify-center">
+              <div class="p-5 items-center my-auto">
+                <i class="fa-brands fa-servicestack text-3xl"></i>
+              </div>
+              <div class="col-span-3">
+                <h4 class="font-semibold py-2">Cost Efficient</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias iure,</p>
+              </div>
+            </div>
+            <div class="flex justify-center">
+              <div class="p-5 items-center my-auto">
+                <i class="fa-brands fa-servicestack text-3xl"></i>
+              </div>
+              <div class="col-span-3">
+                <h4 class="font-semibold py-2">Required Customization </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias iure,</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =======================Services section======================= -->
+    <section id="section-services">
+      <div class="grid lg:grid-rows-5 md:grid-rows-3 sm:grid-rows-3 w-5/6 m-auto">
+        <div class="row-span-full flex items-center my-10">
+          <h1 class="text-4xl font-bold">Services</h1>
+        </div>
+        <div class="row-span-3 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4  mx-auto">
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div class="flex justify-center items-center my-5">
+          <button type="button"
+            class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-semibold rounded-lg text-sm px-14 py-3.5 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Our
+            Services</button>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- =======================Services section======================= -->
+    <section id="our-work">
+      <div class="min-h-screen our-work">
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Link js files -->
+  <script src="source/js/navigation.js"></script>
+
+</body>
+
+</html>
