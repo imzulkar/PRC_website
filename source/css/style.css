@@ -1,6 +1,6 @@
 /* ==============Navbar ============== */
 .sticky {
-    position: fixed!important;
+    position: fixed !important;
     top: 0;
     width: 100%;
     background-color: #ffffff !important;
@@ -18,20 +18,24 @@
 
 
 /* sidenav service */
-.nav-link{
+.nav-link {
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.8);;
+    color: rgba(255, 255, 255, 0.8);
+    width: 100%;
     display: block;
     padding: 0.8rem 1rem;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
-.nav-link:hover{
+.nav-link:hover {
+
     color: #fff;
     font-weight: 600;
 }
-.nav-link i{
-    padding-right:10px;
+
+.nav-link i {
+    padding-right: 10px;
 }
 
 /* ##########end navbar########## */
@@ -102,41 +106,44 @@
     background: -webkit-linear-gradient(-45deg, #9ff669 0%, #31de79 100%);
     text-transform: capitalize;
 }
-.service-details{
-    display: none!important;
+
+.service-details {
+    display: none !important;
 
 }
 
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
+    0% {
+        opacity: 0;
         transform: scale(.1, .1);
-	}
-	100% {
-		opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
         transform: scale(1, 1);
-	}
+    }
 }
 
-.show{
-    display: block!important;
+.show {
+    display: block !important;
     opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in-out;
-	animation-duration: .8s;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: .8s;
 }
 
-.nav-link:hover:after{
+/* .nav-link:hover:after {
     border-radius: 0 10px 10px 0;
-}
-.active::after{
+} */
+
+.active::after {
     content: '';
     position: absolute;
-    transform: rotate(-45deg);
-    left:517px;
     width: 20px;
     height: 20px;
+    transform: translateY(50%) rotate(-45deg);
+    left: 516px;
     background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-    z-index: 2;
+    z-index: 3;
 }
