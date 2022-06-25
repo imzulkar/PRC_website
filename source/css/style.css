@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* ==============Navbar ============== */
 .sticky {
     position: fixed !important;
@@ -8,12 +16,17 @@
         0 -3em 3em rgba(0, 0, 0, 0.1),
         0 0 0 2px rgb(255, 255, 255),
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    animation-name: fadeInOpacityNav;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: .8s;
     /* transition: ease-in-out 2s; */
 }
 
 #navbar {
     z-index: 10;
     transition: ease-in-out 1s;
+    color: rgb(61, 61, 61);
 }
 
 
@@ -26,6 +39,7 @@
     padding: 0.8rem 1rem;
     cursor: pointer;
     box-sizing: border-box;
+    transition: color ease-in 2s;
 }
 
 .nav-link:hover {
@@ -112,6 +126,18 @@
 
 }
 
+@keyframes fadeInOpacityNav {
+    0% {
+        /* opacity: 0; */
+        transform: translateY(-50%);
+    }
+
+    100% {
+        /* opacity: 1; */
+        transform: translateY(0);
+    }
+}
+
 @keyframes fadeInOpacity {
     0% {
         opacity: 0;
@@ -136,6 +162,9 @@
 /* .nav-link:hover:after {
     border-radius: 0 10px 10px 0;
 } */
+.active {
+    transition: content ease-out 2s;
+}
 
 .active::after {
     content: '';
@@ -146,4 +175,5 @@
     left: 516px;
     background-color: rgb(243 244 246 / var(--tw-bg-opacity));
     z-index: 3;
+
 }
