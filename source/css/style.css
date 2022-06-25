@@ -6,6 +6,32 @@
     box-sizing: border-box;
 }
 
+/* ==============Custome annimation ============== */
+@keyframes fadeInOpacityNav {
+    0% {
+        /* opacity: 0; */
+        transform: translateY(-50%);
+    }
+
+    100% {
+        /* opacity: 1; */
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+        transform: scale(.1, .1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+
 /* ==============Navbar ============== */
 .sticky {
     position: fixed !important;
@@ -126,29 +152,7 @@
 
 }
 
-@keyframes fadeInOpacityNav {
-    0% {
-        /* opacity: 0; */
-        transform: translateY(-50%);
-    }
 
-    100% {
-        /* opacity: 1; */
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInOpacity {
-    0% {
-        opacity: 0;
-        transform: scale(.1, .1);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1, 1);
-    }
-}
 
 .show {
     display: block !important;
@@ -176,4 +180,47 @@
     background-color: rgb(243 244 246 / var(--tw-bg-opacity));
     z-index: 3;
 
+}
+
+.customer-feedback {
+    /* transform: translateY(-20%); */
+    background-image: url(../images/complain.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* z-index: -1; */
+    /* overflow: hidden; */
+}
+
+/* ============== service nav content ============== */
+.service-nav-bar {
+    box-sizing: border-box;
+}
+
+.service-nav-bar li {
+    transition: transform ease-in-out 1s;
+    min-height: 24.7% !important;
+    background-color: #ffffff;
+    margin-bottom: .3%;
+
+}
+
+.service-nav-content {
+    width: 95%;
+}
+
+.service-nav-bar li:hover {
+    transform: translateX(-20%);
+}
+
+/* .service-ancor::before {
+    content: '<';
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+} */
+
+
+.service-nav-bar li h4 {
+    color: #31de79;
+    font-size: 2em;
 }
