@@ -149,10 +149,16 @@
 
 .service-details {
     display: none !important;
-
 }
 
-
+.service-details div div p .fa-solid {
+    /* background: inear-gradient(135deg, #9ff669 0%, #31de79 100%);
+     */
+    font-size: 72px;
+    background: -webkit-linear-gradient(-45deg, #9ff669 0%, #31de79 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .show {
     display: block !important;
@@ -185,8 +191,10 @@
 .customer-feedback {
     /* transform: translateY(-20%); */
     background-image: url(../images/complain.webp);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
+    height: 536px !important;
+    width: 100%;
     /* z-index: -1; */
     /* overflow: hidden; */
 }
@@ -194,14 +202,19 @@
 /* ============== service nav content ============== */
 .service-nav-bar {
     box-sizing: border-box;
+
 }
 
 .service-nav-bar li {
-    transition: transform ease-in-out 1s;
-    min-height: 24.7% !important;
-    background-color: #ffffff;
+    transition: transform ease-in-out .6s, width ease-in-out .6s;
+    height: calc(536px/4 - .3%) !important;
+    background-color: rgba(255, 255, 255, .85);
     margin-bottom: .3%;
-
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .service-nav-content {
@@ -209,15 +222,34 @@
 }
 
 .service-nav-bar li:hover {
-    transform: translateX(-20%);
+    transform: translateX(-17%);
+    width: 120%;
 }
 
-/* .service-ancor::before {
-    content: '<';
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-} */
+.service-ancor {
+    width: 5%;
+}
+
+.service-ancor::before {
+    content: "<";
+    padding: 0 10px;
+    font-size: 2em;
+    display: block;
+    color: #92edb8;
+    transform: translateX(-50%);
+    font-weight: 400;
+}
+
+.service-nav-bar li:hover .service-ancor::before {
+    content: '>';
+    padding: 0 10px;
+    font-size: 2em;
+    display: block;
+    color: #92edb8;
+    transform: translateX(-50%);
+    font-weight: 400;
+    transition: ease-in 2s;
+}
 
 
 .service-nav-bar li h4 {
